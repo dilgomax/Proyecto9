@@ -1,0 +1,28 @@
+body{
+    background:#6b8e23;
+}
+header{
+    background: #ffc0cb;
+    display: flex;
+    justify-content:center;
+}
+
+nav{
+    display: flex;
+    margin: 30px;
+}
+nav li {
+    font-size: 25px;
+    padding: 30px;
+    list-style: none;
+}
+/* Se  crea el hover para cambiar el color al sobre pasar el curso
+en los enlaces*/
+header li:hover{
+    background: #001aff;
+    
+
+}
+nav a{
+    color: white;
+}

@@ -1,0 +1,60 @@
+body{
+    background: grey;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: div;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    }
+    /* @ kyframe se  encarga  de  configuar las animaciones 
+    que configuramos en css para  los  elementos*/
+
+    /* primera  animacion*/
+    @keyframes div {
+    0% {background-color: #ff0000; left:0px;}
+    50% {background-color: #ffff00; left:200px;}
+    100% {background-color: #ff0000; left:0px;}
+    }
+
+
+    /*Segunda animacion*/
+
+    .div2 {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: red;
+        animation-name: div2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate ;
+        
+        }
+
+        @keyframes div2 {
+            0% {background-color: #ff0000; left:0px; top:0px;}
+            25% {background-color: #0000ff;color: white; left:0px; top:200px;}
+            50% {background-color: #008000; left:200px; top:200px;}
+            75% {background-color: #ffff00; left:200px; top:0px;}
+            100% {background-color: #ff0000; left:0px; top:0px;}
+        }   
+        
+        @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Great+Vibes&display=swap');
+
+*{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-style: italic;
+}
+p{
+    text-align: center;
+
+
+    
+
+}

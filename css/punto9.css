@@ -1,0 +1,29 @@
+body{
+    background: #ffffff;
+    
+}
+
+table, td{
+    
+    background: #ffff00;
+    border: 4px dotted #000000;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+#dot{
+    border-bottom: 4.1px dotted #ff0000;
+    
+}
+
+th{
+    color: #ff0000;
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+    color: #000000;
+}

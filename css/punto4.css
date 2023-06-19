@@ -1,0 +1,13 @@
+body{
+    background-color: grey;
+    text-align: center;
+}
+
+/*se  agrega  id para  altenr el color del texto*/
+#red{
+    color: red;
+}
+
+#blue{
+    color: blue;
+}

@@ -1,0 +1,40 @@
+
+body{
+    background: grey;
+}
+/*Se crea clases e id para las  propiedades de los  enlaces*/
+.container{
+    display:flex;
+    font-size: 200%;
+    flex-direction: column;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.item-1{
+    
+    text-align: center;
+}
+
+.item-2{
+    
+    width: 400px;
+    padding: 30px;
+    line-height: 60px;
+    text-align: justify;
+    align-content: center;
+}
+
+#yellow{
+    color: yellow;
+}
+#purple{
+    color: purple;
+}
+
+a{
+    display: block;
+}
+    

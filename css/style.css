@@ -1,0 +1,666 @@
+/* Se  agregan estilos  a la  barra de  navegacion  y un footer
+se agrega  tabien  responsive  en 640 y 1980*/
+
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif; 
+}
+
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+a{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+}
+h1{
+    font-size: 90px;
+}
+h3{
+    font-size: 23px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+h2{
+    font-size: 26px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+h4{
+    font-size: 23px;
+    margin-top: 23px;
+    margin-left: 150px;
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+h6{
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 150px;
+    color: rgb(255, 255, 255);
+    font-weight: inherit;
+    position: relative;
+    z-index: 2;
+}
+#title_1{
+    margin: 100px 150px;
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+}
+#title_2{
+    margin-left: 150px;
+    margin-top: -110px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+/*ESTILOS DEL HEADER*/
+body{
+    background-color: #020917;
+}
+header{
+    
+    background-color: #081730;
+    height: 100vh;
+    border-left: 150px;
+    border-radius: 0px 0px 1000px 0px;
+
+}
+header nav li{
+    padding-right: 60px;
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    align-content: flex-end;
+}
+ul{
+    display: inline-flex;
+}
+header .logo_main{
+    height: 100px;
+    margin-left: 120px;
+}
+header .equalizer_header{
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    right: 0%;
+}
+
+header .phone_header{
+    height: 75%;
+    position: absolute;
+    z-index: 1;
+    top: 34%;
+    right: 12%;
+    filter: drop-shadow(0 12px 12px #000000b3);
+}
+
+.logos_apps{
+    margin: 30px 0px 0px 150px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+}
+.logos_apps img{
+    height: 100%;
+    border: 1px solid #808080;
+    border-radius: 12px;
+    box-shadow: -7px 22px 25px 0px #000000bf;
+}
+.logos_apps .google{
+    margin-left: 35px;
+}
+
+/*Sección de servicios*/
+#services{
+    height: 100vh;
+    text-align: center;
+}
+.separador{
+    margin: 60px auto;
+}
+.cont_servi{
+    width: 80%;
+    height: 450px;
+    margin: 80px 0px 0px 10%;
+    display: inline-flex;
+}
+.uni_serv{
+    width: 25%;
+    height: 90%;
+    margin: 30px;
+}
+.uni_serv .box_icon{
+    height: 70px;
+    width: 70px;
+    background: #081730;
+    border-radius: 18px;
+    margin: auto;
+}
+.box_icon img{
+    height: 55%;
+    vertical-align: middle;
+    margin: 15% auto; 
+}
+.uni_serv .sub{
+    font-size: 22px;
+}
+.uni_serv p{
+    font-size: 22px;
+    margin: 25px 10px 10px 10px;
+    color: rgba(255, 255, 255, 0.315);
+}
+.uni_serv a{
+    color: #E600FF;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+
+footer{
+    /* creacion del footer de la  pagina  con la  informacion de  caontato*/
+  
+    border: 5px solid #5f0b6a ;
+    border-bottom: none;
+    border-radius: 50px 50px 0px 0px ;
+   
+    background-image: url(../img/equalizer-middle.png);
+    background-size: contain;
+   
+}
+.foot{
+    color: #ffffff;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+   
+
+    
+}
+
+.foot2{
+    
+    color: #ffffff;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 20px;
+   padding-top: 20px;
+    
+
+    
+}
+/*propiedades de  header */
+  /* estilos  para  tener  la  barra de  navegacion figa  en la  pagina
+     y acceder de  sorma  rapisa  a  los   enlaces */
+.posi{
+    position: fixed;
+    margin-top: -105px;
+    z-index: 5;
+    margin-right: 10%;
+    background: #350633;
+    padding-right: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+/*responsive  640 px ###################################################################*/
+@media screen and (min-width: 0px) {
+    body {
+   
+    
+    max-width: 640px;
+    }
+     /* estilos  para  tener  la  barra de  navegacion figa  en la  pagina
+     y acceder de  sorma  rapisa  a  los   enlaces */
+    .posi{
+        position: fixed;
+        right: 0%;
+        margin-top: -10%;
+        z-index: 5;
+        margin-left: 5%;
+        background: #350633;
+        padding: 0.5%;
+        border-radius: 30px;
+        font-size: 50%;
+        padding-right: 145px;
+        padding-left: 2%;
+        
+        
+    }
+
+
+#a2{
+    font-size: 400%;
+
+}
+
+
+    a{
+        text-decoration: none;
+        font-style: none;
+        color: white;
+    }
+    h1{
+        font-size: 400%;
+        
+    }
+    h3{
+        font-size: 400%;
+        margin-top: 10%;
+        color: #ffffff;
+        font-weight: normal;
+        position: relative;
+        z-index: 2;
+    }
+    h2{
+        font-size: 400%;
+        margin-top: 10%;
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+    }
+    h4{
+        font-size: 100%;
+        margin-top: 23%;
+        margin-left: 10%;
+        color: #ffffff67;
+        font-weight: normal;
+        position: relative;
+
+        z-index: 2;
+    }
+    h6{
+        font-size: 100%;
+        margin-top: 15%;
+        margin-left: 10%;
+        color: #ffffff;
+        font-weight: inherit;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    p{
+        font-size: 70%;
+    }
+    #title_1{
+        
+        margin: 100px 10%;
+        color: #ffffffa4;
+        font-weight: lighter;
+        position: relative;
+        z-index: 2;
+    }
+    #title_2{
+        margin-left: 10%;
+        margin-top: -110px;
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+    }
+    /*ESTILOS DEL HEADER*/
+    body{
+        background-color: #020917;
+    }
+    header{
+        
+        background-color: #081730;
+        height: 30%;
+        border-left: 15%;
+        border-radius: 0px 0px 200% 0px;
+    }
+   
+    header nav li{
+        padding-right: 20%;
+        color: #ffffff;
+        list-style: none;
+        display: flex;
+        align-content: flex-end;
+    }
+    ul{
+        display: inline-flex;
+    }
+    header .logo_main{
+        position: relative;
+        top: 20px;
+        
+        width: 10%;
+        height: 10%;
+        margin-left: 5%;
+    }
+    header .equalizer_header{
+        height: 14%;
+        position: absolute;
+        z-index: 1;
+        top: 12%;
+        right: 15%;
+    }
+    
+    header .phone_header{
+        height: 25%;
+        position: absolute;
+        z-index: 1;
+        top: 14%;
+        right: 12%;
+        filter: drop-shadow(0 12px 12px #000000b3);
+    }
+    
+    .logos_apps{
+        margin: 30px 0px 0px 30%;
+        height: 50px;
+        position: relative;
+        z-index: 2;
+    }
+    .logos_apps img{
+        height: 50%;
+        border: 1px solid grey;
+        border-radius: 8px;
+        box-shadow: -7px 22px 25px 0px #000000bf;
+    }
+    .logos_apps .google{
+        margin-left: 3%px;
+    }
+    
+    /*Sección de servicios*/
+    #services{
+        height: 100vh;
+        text-align: center;
+        font-size: 20%;
+    }
+    .separador{
+        margin: 60px auto;
+    }
+    .cont_servi{
+        width: 80%;
+        height: 450px;
+        margin: 80px 0px 0px 0%;
+        display: inline-flex;
+    }
+    .uni_serv{
+        width: 25%;
+        height: 90%;
+        margin: 5%;
+    }
+    .uni_serv .box_icon{
+        height: 30px;
+        width: 30px;
+        background: #081730;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .box_icon img{
+        height: 70%;
+        vertical-align: middle;
+        margin: 15% auto; 
+    }
+    .uni_serv .sub{
+        font-size: 500%;
+    }
+    .uni_serv p{
+        font-size: 500%;
+        margin: 25px 10px 10px 10px;
+        color: #ffffff50;
+    }
+    .uni_serv a{
+        color: #E600FF;
+        position: relative;
+        bottom: 0px;
+        
+    }
+
+
+    
+    }
+
+    /*responsive 1980 2###############################################################*/
+    
+@media screen and (min-width: 640px) {
+    body {
+    
+
+    max-width: 1979px;
+    }
+
+    
+a{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+}
+h1{
+    font-size: 90px;
+}
+h3{
+    font-size: 23px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+h2{
+    font-size: 23px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+h4{
+    font-size: 23px;
+    margin-top: 23px;
+    margin-left: 150px;
+    color: #ffffff67;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+h6{
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 150px;
+    color: #ffffff;
+    font-weight: inherit;
+    position: relative;
+    z-index: 2;
+}
+#title_1{
+    margin: 100px 150px;
+    color: #ffffffa4;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+}
+#title_2{
+    font-size: 90px;
+    margin-left: 150px;
+    margin-top: -110px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+/*ESTILOS DEL HEADER*/
+body{
+    background-color: #020917;
+}
+header{
+    
+    background-color: #081730;
+    height: 100vh;
+    border-left: 150px;
+    border-radius: 0px 0px 1000px 0px;
+
+    
+}
+header nav li{
+    padding-right: 60px;
+    color: white;
+    list-style: none;
+    display: flex;
+    align-content: flex-end;
+}
+ul{
+    display: inline-flex;
+}
+header .logo_main{
+    height: 100px;
+    margin-left: 120px;
+}
+header .equalizer_header{
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    right: 15%;
+}
+
+header .phone_header{
+    height: 75%;
+    position: absolute;
+    z-index: 1;
+    top: 34%;
+    right: 12%;
+    filter: drop-shadow(0 12px 12px #000000b3);
+}
+
+.logos_apps{
+    margin: 30px 0px 0px 150px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+}
+.logos_apps img{
+    height: 100%;
+    border: 1px solid #808080;
+    border-radius: 12px;
+    box-shadow: -7px 22px 25px 0px #000000bf;
+}
+.logos_apps .google{
+    margin-left: 35px;
+}
+
+/*Sección de servicios*/
+#services{
+    height: 100vh;
+    text-align: center;
+}
+.separador{
+    margin: 60px auto;
+}
+.cont_servi{
+    width: 80%;
+    height: 450px;
+    margin: 80px 0px 0px 10%;
+    display: inline-flex;
+}
+.uni_serv{
+    width: 25%;
+    height: 90%;
+    margin: 30px;
+}
+.uni_serv .box_icon{
+    height: 70px;
+    width: 70px;
+    background: #081730;
+    border-radius: 18px;
+    margin: auto;
+}
+.box_icon img{
+    height: 55%;
+    vertical-align: middle;
+    margin: 15% auto; 
+}
+.uni_serv .sub{
+    font-size: 22px;
+}
+.uni_serv p{
+    font-size: 22px;
+    margin: 25px 10px 10px 10px;
+    color: #ffffff50;
+}
+.uni_serv a{
+    color: #E600FF;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+
+footer{
+    /* creacion del footer de la  pagina  con la  informacion de  caontato*/
+  
+    border: 5px solid #5f0b6a ;
+    border-bottom: none;
+    border-radius: 50px 50px 0px 0px ;
+   width: 100%;
+    background-image: url(../img/equalizer-middle.png);
+    background-size: contain;
+   
+}
+.foot{
+    color: white;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+   
+
+    
+}
+
+.foot2{
+    
+    color: white;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 20px;
+   padding-top: 20px;
+    
+
+    
+}
+/*propiedades de  header */
+  /* estilos  para  tener  la  barra de  navegacion figa  en la  pagina
+     y acceder de  sorma  rapisa  a  los   enlaces */
+.posi{
+    position: fixed;
+    margin-top: -105px;
+    z-index: 5;
+    margin-right: 10%;
+    background: #350633;
+    padding-right: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 100%;
+
+
+}
+}

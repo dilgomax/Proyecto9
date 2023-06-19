@@ -1,0 +1,68 @@
+/*se  integra responsive*/
+form{
+    margin:0% 10% 0% 10%;
+    background: #c7dbdb99;
+    z-index: 5;
+    padding: 20px;
+    border-radius: 20px;   
+}
+
+.text{
+    text-align: center;
+    margin-top: 10%;
+}
+
+header{
+    margin: 5% 10% 0% 10%;
+    
+}
+#ad{
+    color: #ffffff;
+}
+
+
+@media screen and (min-width: 480px) {
+    form{
+        margin:3% 20% 0% 20%;
+        background: #c7dbdb99;
+        z-index: 5;
+        padding: 20px;
+        border-radius: 20px; 
+    }
+    header{
+    margin: 10% 10% 0% 10%;
+    text-align: center;
+}
+
+    }
+
+@media screen and (min-width: 794px) {
+    form{
+        margin:3% 25% 0% 25%;
+        background: #c7dbdb99;
+        z-index: 5;
+        padding: 20px;
+        border-radius: 20px; 
+    }
+    header{
+        margin: 5% 10% 0% 10%;
+        text-align: center;
+    }
+    }
+    @media screen and (min-width: 1280px) {
+        form{
+            margin:3% 35% 0% 35%;
+            background: #c7dbdb99;
+            z-index: 5;
+            padding: 20px;
+            border-radius: 20px;  
+        }
+        .text{
+            text-align: center;
+            margin-top: 5%;
+        }
+        header{
+            margin: 3% 10% 0% 10%;
+            text-align: center;
+        }
+    }

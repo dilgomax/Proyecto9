@@ -4,10 +4,10 @@ body{
 }
 
 /*se  agrega  id para  altenr el color del texto*/
-#red{
+.red{
     color: red;
 }
 
-#blue{
+.blue{
     color: blue;
 }
